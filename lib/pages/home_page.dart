@@ -12,6 +12,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  String title = 'Baowee flutter';
 
   void _incrementCounter() {
     setState(() {
@@ -29,6 +30,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text('Hello $title'),
+            const ElevatedButton(onPressed: null, child: Text('Press now')),
             const Header(),
             const Text(
               'Increment your push:',

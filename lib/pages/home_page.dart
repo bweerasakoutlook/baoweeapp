@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ntapp/widgets/header.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -28,8 +29,9 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const Header(),
             const Text(
-              'You have pushed the button this many times:',
+              'Increment your push:',
             ),
             Text(
               '$_counter',

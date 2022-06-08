@@ -31,7 +31,13 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('Hello $title'),
-            const ElevatedButton(onPressed: null, child: Text('Press now')),
+            ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    title = 'baowee';
+                  });
+                },
+                child: const Text('Press now')),
             const Header(),
             const Text(
               'Increment your push:',

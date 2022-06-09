@@ -27,7 +27,6 @@ class _MyHomePageState extends State<MyHomePage> {
     print('init state home page');
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Hello $title'),
+            Text('Hello $title', style: Theme.of(context).textTheme.headline1),
             ElevatedButton(
                 onPressed: () {
                   setState(() {
@@ -52,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline1,
             ),
           ],
         ),

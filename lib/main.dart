@@ -13,8 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Baowee App',
       theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
+          canvasColor: const Color.fromARGB(255, 211, 235, 212),
+          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.green)
+              .copyWith(secondary: Colors.orangeAccent),
+          visualDensity: VisualDensity.adaptivePlatformDensity),
+      debugShowCheckedModeBanner: false,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

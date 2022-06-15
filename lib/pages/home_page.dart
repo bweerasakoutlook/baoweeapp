@@ -31,7 +31,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Image.asset(
+          'assets/images/img8.jpg',
+          height: 50,
+          filterQuality: FilterQuality.low,
+          // width: 100,
+        ),
+        // centerTitle: true,
+        // title: Text(widget.title),
       ),
       body: Center(
         child: Column(
